@@ -25,6 +25,8 @@ This is the code and files for WGS analysis.
     - Strelka calls germline and somatic small variants from mapped sequencing reads and is optimized for rapid clinical analysis of germline variation in small cohorts and            somatic variation in tumor/normal sample paris. Both germline callers include a final empirical variant rescoring step using a random forest model to reflect numerous              features indicative of call reliability which may not be represented in the core variant calling probability model.
   3) MuTect2
     - MuTect2 is a somatic SNP and indel caller that combines the DREAM challenge-winning somatic genotyping engine of the original MuTect with the assembly-based machinery of           HaplotypeCaller.
+    (1) Panel of Normal
+    
  
 6. Merge Variants: With outputs from all three algorithms, merge the variants to generate a comprehensive list of detected variants.
   - Installation of GATK 3.6 is need for the further processing (GATK4.0 doesn't have the function).
